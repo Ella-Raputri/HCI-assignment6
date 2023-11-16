@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Project Practice</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $("#menu-1").hover(function(){
+            $("#menu-desc1").show();
+        },
+        function(){
+            $("#menu-desc1").hide();
+        }); 
+    });
+    $(document).ready(function(){
+        $("#menu-2").hover(function(){
+            $("#menu-desc2").show();
+        },
+        function(){
+            $("#menu-desc2").hide();
+        }); 
+    });
+    $(document).ready(function(){
+        $("#menu-3").hover(function(){
+            $("#menu-desc3").show();
+        },
+        function(){
+            $("#menu-desc3").hide();
+        }); 
+    });
+    $(document).ready(function(){
+        $("#menu-4").hover(function(){
+            $("#menu-desc4").show();
+        },
+        function(){
+            $("#menu-desc4").hide();
+        }); 
+    });
+    $(document).ready(function(){
+        $("#menu-5").hover(function(){
+            $("#menu-desc5").show();
+        },
+        function(){
+            $("#menu-desc5").hide();
+        }); 
+    });
+    $(document).ready(function(){
+        $("#menu-6").hover(function(){
+            $("#menu-desc6").show();
+        },
+        function(){
+            $("#menu-desc6").hide();
+        }); 
+    });
+    </script>
+
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar navbar-light bg-ligt">
+      <h1 class="navbar-brand">
+        <strong> Ella Raputri</strong>
+      </h1>
+    </nav>
+  </div>
+    
+  <div class="topnav">
+    <nav class="navbar navbar-expand-lg purple">
+      <div class="container-fluid fw-bold">
+        <a class="navbar-brand text-uppercase" href="#">My Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link text-white" aria-current="page" href="index.html">Accordion FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index_gallery.html">Image Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index_calc.html">Dynamic Price Calculator</a>
+            </li>
+            <li class="nav-item nav-underline">
+              <a class="nav-link active text-white" href="index_menu.html">Interactive Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index_drag.html">Drag and Drop</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br/>
+  </div>
+    
+  <div class="body text-center">
+    <h1>Interactive Menu</h1><br/>
+    <h4>Please hover to have a look at our mouth-watering menu!</h4><br/>
+    <p class="menu_name" id="menu-1">1. Fried Rice</p>
+    <div class="menu_desc" id="menu-desc1">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="menu/fried rice.jpg" alt="fried rice" class="img-fluid "><br/>
+            </div>
+            <div class="col-sm-6 break">
+                <div class="midle">
+                    <p>A <span class="text-danger fw-bold">MUST TRY</span> in our restaurant! <br/>
+                        Cooked rice that has been stir fried in a frying pan, combined with sliced
+                        omelet, vegetables, and chicken meat. <br/><br/>
+                        <span class="fw-bold">Price: Rp 20.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <p class="menu_name" id="menu-2">2. Chicken Katsu</p>
+    <div class="menu_desc" id="menu-desc2">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="menu/katsu chicken.jpg" alt="chicken katsu" class="img-fluid "><br/>
+            </div>
+            <div class="col-sm-6 break">
+                <div class="midle">
+                    <p> A Japanese dish consisting a piece of chicken meat, covered in
+                        bread crumb, and then fried. Served with some vegetables and mayonnaise
+                        as appetizer and sauce to be consumed with the chicken.<br/><br/>
+                        <span class="fw-bold">Price: Rp 22.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <p class="menu_name" id="menu-3">3. Wonton Noodle</p>
+    <div class="menu_desc" id="menu-desc3">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="menu/wonton noodle.jpg" alt="wonton noodle" class="img-fluid "><br/>
+            </div>
+            <div class="col-sm-6 break">
+                <div class="midle">
+                    <p>Egg noodles served with hot broth, some wonton dumplings, and bok-choy
+                        (vegetable). A Chinese dish that combined the soft texture of noodle and
+                        thick flavour of hot broth. <br/><br/>
+                        <span class="fw-bold">Price: Rp 24.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <p class="menu_name " id="menu-4">4. Black Pepper Chicken</p>
+    <div class="menu_desc" id="menu-desc4">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="menu/black pepper.jpg" alt="black pepper chicken" class="img-fluid "><br/>
+            </div>
+            <div class="col-sm-6 break">
+                <div class="midle">
+                    <p>A dish containing some pieces of chicken meat that are fried with
+                        special black pepper sauce and some bell peppes. A combination of the crispy in the outside yet
+                        tender in the inside chicken meat with the aroma and the flavour of 
+                        slightly spicy black pepper sauce.<br/><br/>
+                        <span class="fw-bold">Price: Rp 22.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <p class="menu_name" id="menu-5">5. Bak Kut Teh</p>
+    <div class="menu_desc" id="menu-desc5">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="menu/bak kut teh.jpg" alt="bak kut teh" class="img-fluid "><br/>
+            </div>
+            <div class="col-sm-6 break">
+                <div class="midle">
+                    <p>A pork dish that consists of pork ribs stewed with a mixture of
+                        fragrant herbs, including garlic, cinnamon, star anise, and many more.
+                        Delicious tender pork ribs simmered with thick spices broth.<br/><br/>
+                        <span class="fw-bold">Price: Rp 50.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <p class="menu_name" id="menu-6">6. Fried Carrot Cake</p>
+    <div class="menu_desc" id="menu-desc6">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="menu/carrot cake.png" alt="fried carrot cake" class="img-fluid "><br/>
+            </div>
+            <div class="col-sm-6 break">
+                <div class="midle">
+                    <p>A savoury Chinese dish that is made from the mixture of radish (white carrot) 
+                        and rice flour that is steamed and then fried with eggs and other ingredients.
+                        Doesn't consist any carrot. It has two kind of flavours, the sweet black one
+                        (fried with sweet black soya sauce) and the appetizing white one (original). <br/><br/>
+                        <span class="fw-bold">Price: Rp 25.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+  </div>
+   
+  <br/><br/>
+  <div class="footer">
+    <div class="row text-center text-white">
+      <div class="col-md-4 bpurple">
+        <pre></pre>
+        <img class='img-fluid' src="propic.png" alt="Profile Picture" width="60px" height="60px"/>
+        <pre></pre>
+        <h2 class="fw-normal">Ella Raputri</h2>
+        <pre></pre><pre></pre><pre></pre>
+      </div>
+
+      <div class="col-md-8 bpurple">
+        <pre></pre><pre></pre>
+        <h2 class="fw-normal">Contact Me:</h2>
+        <p> <a class='text-white' href="https://github.com/Ella-Raputri"> <img src=".\github.png" alt="Github" width="20px"> GitHub</a> 
+          <a class='text-white'href="https://www.linkedin.com/in/ella-raputri-128270187"> <img src=".\linkedin.png" alt="LinkedIn" width="20px"> LinkedIn</a>
+          <a class='text-white'href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA==" class="insta"> <img src=".\insta.webp" alt="Instagram" width="20px"> Instagram</a>
+          <a class='text-white'href="https://wa.me/62895629504490"><img src=.\WhatsApp.webp alt="WhatsApp" width="20px"> WhatsApp</a> 
+          <a class='text-white'href="https://line.me/ti/p/_YCfUPL6D_"> <img src=.\line.png alt="Line" width="20px"> Line</a></p>
+      </p>
+      <pre></pre><pre></pre><pre></pre>
+      </div>
+  </div>
+
+</body>
+</html>

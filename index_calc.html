@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Project Practice</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $("#up1").click(function(){
+            $("#test1").val(parseInt($("#test1").val()) + 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#down1").click(function(){
+            $("#test1").val(parseInt($("#test1").val()) - 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#up2").click(function(){
+            $("#test2").val(parseInt($("#test2").val()) + 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#down2").click(function(){
+            $("#test2").val(parseInt($("#test2").val()) - 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#up3").click(function(){
+            $("#test3").val(parseInt($("#test3").val()) + 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#down3").click(function(){
+            $("#test3").val(parseInt($("#test3").val()) - 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#up4").click(function(){
+            $("#test4").val(parseInt($("#test4").val()) + 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#down4").click(function(){
+            $("#test4").val(parseInt($("#test4").val()) - 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#up5").click(function(){
+            $("#test5").val(parseInt($("#test5").val()) + 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#down5").click(function(){
+            $("#test5").val(parseInt($("#test5").val()) - 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#up6").click(function(){
+            $("#test6").val(parseInt($("#test6").val()) + 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#down6").click(function(){
+            $("#test6").val(parseInt($("#test6").val()) - 1);
+        });
+    });
+
+    $(document).ready(function(){
+        $("#value").click(function(){
+            var int1 = parseInt($("#test1").val()) * 3000;
+            var int2 = parseInt($("#test2").val()) * 5000;
+            var int3 = parseInt($("#test3").val()) * 7000;
+            var int4 = parseInt($("#test4").val()) * 10000;
+            var int5 = parseInt($("#test5").val()) * 12000;
+            var int6 = parseInt($("#test6").val()) * 15000;
+
+            if(int1 < 0 || int2 < 0 || int3 < 0 || int4 < 0 || int5 < 0 || int6 < 0){
+                $("#anser").text("Please input again.");
+            }else{
+                var resultInt = int1 + int2 + int3 + int4 + int5 + int6;
+                var result = "Total Price : Rp " + resultInt;
+            
+                $("#anser").text(result);
+            }
+        });
+    });
+    </script>
+
+</head>
+<body>
+  <div class="header">
+    <nav class="navbar navbar-light bg-ligt">
+      <h1 class="navbar-brand">
+        <strong> Ella Raputri</strong>
+      </h1>
+    </nav>
+  </div>
+    
+  <div class="topnav">
+    <nav class="navbar navbar-expand-lg purple">
+      <div class="container-fluid fw-bold">
+        <a class="navbar-brand text-uppercase" href="#">My Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="index.html">Accordion FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index_gallery.html">Image Gallery</a>
+            </li>
+            <li class="nav-item nav-underline">
+              <a class="nav-link text-white active" href="index_calc.html">Dynamic Price Calculator</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="index_menu.html">Interactive Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index_drag.html">Drag and Drop</a>
+            </li>
+              
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br/>
+  </div>
+    
+  <div class="body text-center">
+    <h1>Dynamic Price Calculator</h1>
+    <table class="table table-danger width8">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Pen</td>
+            <td>Rp 3.000,00</td>
+        </tr>
+        <tr>
+            <td>Eraser</td>
+            <td>Rp 5.000,00</td>
+        </tr>
+        <tr>
+            <td>Ruler</td>
+            <td>Rp 7.000,00</td>
+        </tr>
+        <tr>
+            <td>Post It Notes (100 sheet)</td>
+            <td>Rp 10.000,00</td>
+        </tr>
+        <tr>
+            <td>Correction Tape</td>
+            <td>Rp 12.000,00</td>
+        </tr>
+        <tr>
+            <td>Scissors</td>
+            <td>Rp 15.000,00</td>
+        </tr>
+    </table>
+
+    <br/>
+    <h4>Please enter how many items that you want to buy.</h4><br/>
+    <p>
+        Pen: <input type="number" id="test1" value="0" min="0">
+        <button class="btn btn-outline-secondary" id='up1'>+</button><button class="btn btn-outline-secondary" id='down1'>-</button>
+        
+        <br/><br/>
+        Eraser: <input type="number" id="test2" value="0">
+        <button class="btn btn-outline-secondary" id='up2'>+</button><button class="btn btn-outline-secondary" id='down2'>-</button>
+
+        <br/><br/>
+        Ruler: <input type="number" id="test3" value="0">
+        <button class="btn btn-outline-secondary" id='up3'>+</button><button class="btn btn-outline-secondary" id='down3'>-</button>
+
+        <br/><br/>
+        Post It Notes: <input type="number" id="test4" value="0">
+        <button class="btn btn-outline-secondary" id='up4'>+</button><button class="btn btn-outline-secondary" id='down4'>-</button>
+
+        <br/><br/>
+        Correction Tape: <input type="number" id="test5" value="0">
+        <button class="btn btn-outline-secondary" id='up5'>+</button><button class="btn btn-outline-secondary" id='down5'>-</button>
+
+        <br/><br/>
+        Scissors: <input type="number" id="test6" value="0">
+        <button class="btn btn-outline-secondary" id='up6'>+</button><button class="btn btn-outline-secondary" id='down6'>-</button>
+    
+    </p>
+
+    
+    <button class="btn btn-outline-danger" id="value">Show Total Price</button>
+    <br/><br/>
+    <h5 id="anser"></h5>
+
+  </div>
+   
+  <br/><br/>
+  <div class="footer">
+    <div class="row text-center text-white">
+      <div class="col-md-4 bpurple">
+        <pre></pre>
+        <img class='img-fluid' src="propic.png" alt="Profile Picture" width="60px" height="60px"/>
+        <pre></pre>
+        <h2 class="fw-normal">Ella Raputri</h2>
+        <pre></pre><pre></pre><pre></pre>
+      </div>
+
+      <div class="col-md-8 bpurple">
+        <pre></pre><pre></pre>
+        <h2 class="fw-normal">Contact Me:</h2>
+        <p> <a class='text-white' href="https://github.com/Ella-Raputri"> <img src=".\github.png" alt="Github" width="20px"> GitHub</a> 
+          <a class='text-white'href="https://www.linkedin.com/in/ella-raputri-128270187"> <img src=".\linkedin.png" alt="LinkedIn" width="20px"> LinkedIn</a>
+          <a class='text-white'href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA==" class="insta"> <img src=".\insta.webp" alt="Instagram" width="20px"> Instagram</a>
+          <a class='text-white'href="https://wa.me/62895629504490"><img src=.\WhatsApp.webp alt="WhatsApp" width="20px"> WhatsApp</a> 
+          <a class='text-white'href="https://line.me/ti/p/_YCfUPL6D_"> <img src=.\line.png alt="Line" width="20px"> Line</a></p>
+      </p>
+      <pre></pre><pre></pre><pre></pre>
+      </div>
+  </div>
+
+</body>
+</html>
